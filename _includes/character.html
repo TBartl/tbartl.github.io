@@ -1,0 +1,15 @@
+<style>
+  #character{{include.id}} {
+    width: {{include.w}}px;
+    height: {{include.h}}px;
+    bottom: {{include.y}}px;
+    right: {{include.x}};
+    background-image: url("Parallax/{{include.game}}-Style.png");
+  }
+
+  #character{{include.id}}:hover {
+    background-image: url("Parallax/{{include.game}}-Real.png");
+  }
+</style>
+<div class="character" id="character{{include.id}}">
+</div>
