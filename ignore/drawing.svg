@@ -139,9 +139,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50000001"
-     inkscape:cx="-5884.3281"
-     inkscape:cy="884.51843"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="-3695.8893"
+     inkscape:cy="-374.64"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1113,5 +1113,19 @@
        inkscape:export-filename="C:\Users\tabsk\Desktop\Projects\tbartl.github.io\backgroundImage.png"
        inkscape:export-xdpi="359.80637"
        inkscape:export-ydpi="359.80637" />
+    <rect
+       style="fill:#00112b"
+       id="rect3542"
+       width="222"
+       height="194"
+       x="-3970"
+       y="1986.3622" />
+    <rect
+       style="fill:#d5e5ff"
+       id="rect3542-6"
+       width="222"
+       height="194"
+       x="-3136"
+       y="1986.3622" />
   </g>
 </svg>

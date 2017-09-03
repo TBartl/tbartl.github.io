@@ -26,15 +26,20 @@ body {
     height: 100%;
     margin: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .layer {
-    height: 100%;
+    position: absolute;
     overflow: hidden;
+    max-width: 1920px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .layer-image {
-    position: absolute;
+    /* position: absolute; */
+    position:  static;
     right: 0px;
     bottom: 0px;
     width: 1920px;
