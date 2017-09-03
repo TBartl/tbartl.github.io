@@ -4,20 +4,40 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     padding: 0px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     background-color: #212121;
-    background: url("backgroundImage.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /* background-image: url("backgroundImage.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+.parallax-base {
+    max-width: 1920px;
+    max-height: 1080px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .layer {
+    height: 100%;
+    overflow: hidden;
+}
+
+.layer-image {
     position: absolute;
-    width: 100%;
+    right: 0px;
+    bottom: 0px;
+    width: 1920px;
     height: 1080px;
 }
 
