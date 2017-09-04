@@ -1,5 +1,5 @@
 <style>
-  #character{{include.id}} {
+  .character{{include.id}} {
     width: {{include.w}}px;
     height: {{include.h}}px;
     bottom: {{include.y}}px;
@@ -7,9 +7,9 @@
     background-image: url("Parallax/{{include.game}}-Style.png");
   }
 
-  #character{{include.id}}:hover {
+  .character{{include.id}}-hover {
     background-image: url("Parallax/{{include.game}}-Real.png");
   }
 </style>
-<div class="character" id="character{{include.id}}" ng-mouseover="count = count + 1">
+<div class="character character{{include.id}}" ng-class="{'character{{include.id}}-hover' : hoverChar == {{include.id}}}" ng-mouseover="onCharMouseOver({{include.id}})" ng-mouseleave="onCharMouseLeave()">
 </div>
