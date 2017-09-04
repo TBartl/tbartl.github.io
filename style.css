@@ -35,6 +35,7 @@ body {
     max-width: 1920px;
     right: 0px;
     bottom: 0px;
+    pointer-events:none;
 }
 
 .layer-image {
@@ -44,11 +45,13 @@ body {
     bottom: 0px;
     width: 1920px;
     height: 1080px;
+    pointer-events:none;
 }
 
 .character {
     transition: background-image .3s;
     position: absolute;
+    pointer-events: all;
 }
 
 .character:hover {
