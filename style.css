@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+p {
+    color: white;
+    font-size: 1.5em;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -13,11 +27,8 @@ body {
     padding: 0px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     background-color: #212121;
-    /* background-image: url("backgroundImage.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover; */
+    max-width: 1920px;
+    margin: auto;
 }
 
 .parallax-base {
@@ -58,3 +69,35 @@ body {
     cursor: pointer;
     transition: background-image .3s;
 }
+
+.about {
+    background-color: #00112B;
+    padding: 100px 280px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.head-shot {
+    border-radius: 50%;
+}
+
+.light-margin {
+    margin: 1em;
+}
+
+.lighter-margin {
+    margin: .5em;
+}
+
+.pad-top-bottom {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.center-text {
+    text-align: center;
+}
+
