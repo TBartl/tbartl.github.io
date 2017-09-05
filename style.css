@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     font-weight: bold;
 }
 
@@ -46,17 +46,25 @@ body {
     max-width: 1920px;
     right: 0px;
     bottom: 0px;
-    pointer-events:none;
+    pointer-events: none;
+}
+
+.logo {
+    position: absolute;
+    width: 358px; 
+    height: 358px;
+    left: 70px;
+    top: 70px;
+    background-image: url("Parallax/logo.png");
 }
 
 .layer-image {
-    /* position: absolute; */
-    position:  static;
+    position: static;
     right: 0px;
     bottom: 0px;
     width: 1920px;
     height: 1080px;
-    pointer-events:none;
+    pointer-events: none;
 }
 
 .character {
@@ -70,9 +78,49 @@ body {
     transition: background-image .3s;
 }
 
+.section {
+    padding: 100px 280px;
+}
+
 .about {
     background-color: #00112B;
-    padding: 100px 280px;
+}
+
+.projects-section {
+    background-color: #131e2d;
+}
+
+.projects-header {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.projects-buttons {
+    text-align: center;
+}
+
+.projects-button {
+    font-size: 1.5em;
+    background: none;
+    border-style: solid;
+    border-radius: 4px;
+    text-decoration: none;
+    
+    border-color: white;
+    color: white;
+    
+    padding: .5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.projects-button:hover {
+    cursor: pointer;
+}
+
+#projects-button-0 {
+
 }
 
 .flex-center {
@@ -82,6 +130,10 @@ body {
 
 .head-shot {
     border-radius: 50%;
+}
+
+.medium-margin {
+    margin: 2em;
 }
 
 .light-margin {
@@ -100,4 +152,3 @@ body {
 .center-text {
     text-align: center;
 }
-
