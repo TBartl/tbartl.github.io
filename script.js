@@ -10,7 +10,6 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
     $scope.onCharMouseLeave = function () {
         $scope.startAutoHoverAfter(3000);
         $scope.hoverChar = -1;
-        console.log('Hey');
     }
 
     $scope.cycleHoverChars = function (delay) {
@@ -18,8 +17,6 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
 
         onNextChar = function (i, from) {
             if ($scope.hoverChar != from) {
-                console.log('huh');
-
                 return;
             }
             $scope.hoverChar = chars[i];
@@ -43,24 +40,54 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
 
 var layers = document.getElementsByClassName("layer");
 
-(function () {
-    window.addEventListener('scroll', function (event) {
-        var topDistance = this.pageYOffset;
-        for (var i = 0, len = layers.length; i < len; i++) {
-            var layer = layers[i];
-            var depth = layer.getAttribute('data-depth');
-            var movement = (topDistance * depth);
-            // console.log(movement);
-            // layer.style.bottom = movement + "px";
+var screenRatio = 1;
 
-            var translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-            // layer.style['-webkit-transform'] = translate3d;
-            // layer.style['-moz-transform'] = translate3d;
-            // layer.style['-ms-transform'] = translate3d;
-            // layer.style['-o-transform'] = translate3d;
-            layer.style.transform = translate3d;
-
+function setWindowSize() {
+    var myWidth;
+    // var myHeight;
+    if (typeof (window.innerWidth) == 'number') {
+        myWidth = window.innerWidth;
+        // myHeight = window.innerHeight;
+    } else {
+        if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+            myWidth = document.documentElement.clientWidth;
+            // myHeight = document.documentElement.clientHeight;
+        } else {
+            if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+                myWidth = document.body.clientWidth;
+                // myHeight = document.body.clientHeight;
+            }
         }
-    });
+    }
+    screenRatio = myWidth / 1920.0;
+    document.body.style.transform = "scale(" + screenRatio + ")";
+    setZoom();
+}
 
-}).call(this);
+function setZoom() {
+    var topDistance = this.pageYOffset;
+    for (var i = 0, len = layers.length; i < len; i++) {
+        var layer = layers[i];
+        var depth = layer.getAttribute('data-depth');
+        var movement = (topDistance * depth / screenRatio);
+        // console.log(movement);
+        // layer.style.bottom = movement + "px";
+
+        var translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+        // layer.style['-webkit-transform'] = translate3d;
+        // layer.style['-moz-transform'] = translate3d;
+        // layer.style['-ms-transform'] = translate3d;
+        // layer.style['-o-transform'] = translate3d;
+        layer.style.transform = translate3d;
+
+    }
+}
+
+function setLoad() {
+    setWindowSize();
+}
+
+window.addEventListener('resize', setWindowSize);
+window.addEventListener('scroll', setZoom);
+
+window.addEventListener("load", setLoad);
