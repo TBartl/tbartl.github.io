@@ -68,9 +68,9 @@
 	<div class="section projects-section about">
 		<p class="projects-header light-margin">My Work</p>
 		<div class="projects-buttons">
-			<button type="button" class="projects-button lighter-padding lighter-margin" id="projects-button-0">All Projects</button>
-			<button type="button" class="projects-button lighter-padding lighter-margin">Only Games</button>
-			<button type="button" class="projects-button lighter-padding lighter-margin">Non-Games</button>
+			{% include filterButton.html id="0" text="All Projects" %}
+			{% include filterButton.html id="1" text="Only Games" %}
+			{% include filterButton.html id="2" text="Non Games" %}
 		</div>
 	</div>
 

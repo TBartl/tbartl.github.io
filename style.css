@@ -146,6 +146,8 @@ body {
     padding: .5em;
     padding-top: .25em;
     padding-bottom: .25em;
+
+    outline:none;
 }
 
 .projects-button:hover {
@@ -153,7 +155,33 @@ body {
 }
 
 #projects-button-0 {
+    color: #629009;
+    border-color: #629009;
+}
+#projects-button-0:hover, .projects-button-0-active {
+    color: #a9eb2c;
+    border-color: #a9eb2c;
+    background-color: #344d09;
+}
 
+#projects-button-1 {
+    color: #900972;
+    border-color: #900972;
+}
+#projects-button-1:hover, .projects-button-1-active {
+    color: #eb2cc0;
+    border-color: #eb2cc0;
+    background-color: #4d093e;
+}
+
+#projects-button-2 {
+    color: #70410f;
+    border-color: #70410f;
+}
+#projects-button-2:hover, .projects-button-2-active {
+    color: #ea8f2d;
+    border-color: #ea8f2d;
+    background-color: #4d2c09;
 }
 
 .flex-center {

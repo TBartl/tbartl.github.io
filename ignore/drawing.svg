@@ -139,9 +139,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25000001"
-     inkscape:cx="1158.9414"
-     inkscape:cy="952.94723"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="918.77763"
+     inkscape:cy="-126.15564"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1194,31 +1194,27 @@
          x="895.63879"
          y="1099.5771"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma">My Work</tspan></text>
-    <g
-       id="g4440"
-       transform="translate(51.999998,-73.999997)">
-      <rect
-         y="1212.1683"
-         x="656.42133"
-         height="39.59798"
-         width="160.76779"
-         id="rect4427"
-         style="fill:#552200;fill-opacity:1;stroke:#ff6600;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4312-30-4"
-         y="1239.8286"
-         x="667.88544"
-         style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#ff6600"
-           y="1239.8286"
-           x="667.88544"
-           id="tspan4314-3-9"
-           sodipodi:role="line">All Projects</tspan></text>
-    </g>
     <rect
-       style="fill:none;fill-opacity:1;stroke:#aa8800;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#344d09;fill-opacity:1;stroke:#a9eb2c;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       id="rect4427"
+       width="160.76779"
+       height="39.59798"
+       x="708.42133"
+       y="1138.1683" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a9eb2c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="719.88544"
+       y="1165.8286"
+       id="text4312-30-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4314-3-9"
+         x="719.88544"
+         y="1165.8286"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#a9eb2c;fill-opacity:1">All Projects</tspan></text>
+    <rect
+       style="fill:#4d093e;fill-opacity:1;stroke:#eb2cc0;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4427-6"
        width="160.76779"
        height="39.59798"
@@ -1226,7 +1222,7 @@
        y="1138.1683" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#aa8800;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eb2cc0;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="899.49054"
        y="1165.8286"
        id="text4312-30-4-3"
@@ -1235,9 +1231,9 @@
          id="tspan4314-3-9-3"
          x="899.49054"
          y="1165.8286"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#aa8800">Just Games</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#eb2cc0;fill-opacity:1;">Just Games</tspan></text>
     <rect
-       style="fill:none;fill-opacity:1;stroke:#668000;stroke-width:3.07036328;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#4d2c09;fill-opacity:1;stroke:#eb8f2c;stroke-width:3.07036328;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4427-6-8"
        width="168.69743"
        height="39.527618"
@@ -1245,7 +1241,7 @@
        y="1138.2035" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#677821;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ea8f2d;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="1087.4905"
        y="1165.8286"
        id="text4312-30-4-3-0"
@@ -1254,6 +1250,88 @@
          id="tspan4314-3-9-3-6"
          x="1087.4905"
          y="1165.8286"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#677821">Non Games</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#ea8f2d;fill-opacity:1;">Non Games</tspan></text>
+    <rect
+       style="fill:#131e2d;fill-opacity:1;stroke:#131e2d;stroke-opacity:1"
+       id="rect6265"
+       width="79.195953"
+       height="19.798988"
+       x="-580.53467"
+       y="-59.111191" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.68337822px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-577.8371"
+       y="-43.61377"
+       id="text6267"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6269"
+         x="-577.8371"
+         y="-43.61377">Test</tspan></text>
+    <rect
+       style="fill:#eff3f8;fill-opacity:1;stroke:#131e2d;stroke-opacity:1"
+       id="rect6265-1"
+       width="79.195953"
+       height="19.798988"
+       x="-580.53467"
+       y="-40.241184" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#629009;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4427-2"
+       width="160.76779"
+       height="39.59798"
+       x="708.42133"
+       y="1198.9795" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#629009;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="719.88544"
+       y="1226.6398"
+       id="text4312-30-4-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4314-3-9-4"
+         x="719.88544"
+         y="1226.6398"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#629009;fill-opacity:1;">All Projects</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#900972;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4427-6-2"
+       width="160.76779"
+       height="39.59798"
+       x="888.02643"
+       y="1198.9795" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#900972;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="899.49054"
+       y="1226.6398"
+       id="text4312-30-4-3-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4314-3-9-3-9"
+         x="899.49054"
+         y="1226.6398"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#900972;fill-opacity:1;">Just Games</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#70410f;stroke-width:3.07036328;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4427-6-8-5"
+       width="168.69743"
+       height="39.527618"
+       x="1076.0615"
+       y="1199.0146" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:28.41996765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#70410f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="1087.4905"
+       y="1226.6398"
+       id="text4312-30-4-3-0-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4314-3-9-3-6-2"
+         x="1087.4905"
+         y="1226.6398"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:tahoma;-inkscape-font-specification:tahoma;fill:#70410f;fill-opacity:1;">Non Games</tspan></text>
   </g>
 </svg>
