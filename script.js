@@ -41,6 +41,8 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
 
     $scope.cycleHoverChars(1000);
 
+    $scope.selectedProject = -1;
+
 });
 
 var layers = document.getElementsByClassName("layer");

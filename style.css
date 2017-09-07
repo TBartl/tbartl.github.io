@@ -189,6 +189,7 @@ body {
 
 .justify-center {
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .head-shot {
@@ -230,8 +231,32 @@ body {
 }
 
 
-.project-icon-div:hover {
-    border-width: 8px;
+.project-icon-div:hover, .project-icon-div-active {
     filter: none;
     cursor: pointer;
+}
+
+.project-icon-div-active {
+    border-width: 8px;
+}
+
+.project-container {
+    width: 1200px;
+    height: 0px;
+    transition: height 1s, border-width 1s;
+    overflow: hidden;
+    border: 0px solid white;
+}
+
+.project-container-shown {
+    height: 400px;
+    border-width: 4px;
+}
+
+.project-container-real {
+    width: 1192px;
+    height: 392px;
+    background-color: red;
+    overflow: hidden;
+    overflow-y: scroll;
 }
