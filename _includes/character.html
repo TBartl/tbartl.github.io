@@ -4,12 +4,20 @@
     height: {{include.h}}px;
     bottom: {{include.y}}px;
     right: {{include.x}}px;
-    background-image: url("Parallax/{{include.game}}-Style.png");
+    background-image: url("Parallax/{{include.img}}-Style.png");
   }
 
   .character{{include.id}}-hover {
-    background-image: url("Parallax/{{include.game}}-Real.png");
+    background-image: url("Parallax/{{include.img}}-Real.png");
+  }
+
+  .character-text-div{{include.id}} {
+    left: -{{include.offset}}px;
   }
 </style>
 <div class="character character{{include.id}}" ng-class="{'character{{include.id}}-hover' : hoverChar == {{include.id}}}" ng-mouseover="onCharMouseOver({{include.id}})" ng-mouseleave="onCharMouseLeave()">
+  <div class="character-text-div character-text-div{{include.id}}">
+    <p class="character-text-top">{{include.char}}</p>
+    <p class="character-text-bottom">{{include.game}}</p>
+  </div>
 </div>

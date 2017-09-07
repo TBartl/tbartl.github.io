@@ -79,6 +79,38 @@ body {
     transition: background-image .3s;
 }
 
+
+.character-text-div {
+    position: absolute;
+    white-space: nowrap;
+    border: 2px solid #131e2d;
+    opacity: 0; 
+    top: 100px;
+    transition: top .3s, opacity .3s;
+    pointer-events: none;
+}
+
+
+.character-text-top {
+    background-color: #131e2d;
+    color: #eff3f8;
+    padding: .1em .4em .1em .4em;
+}
+
+.character-text-bottom {
+    background-color: #eff3f8;
+    color: #131e2d;
+    padding: .1em .4em .1em .4em;
+    font-size: 1em;
+}
+
+.character:hover .character-text-div{
+    opacity: 1;
+    top: 0px;
+    transition: top .3s, opacity .3s;
+}
+
+
 .section {
     padding: 100px 280px;
 }
