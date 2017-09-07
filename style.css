@@ -29,7 +29,7 @@ body {
     width: 1920px;
     height: 1080px;
     transform-origin: 0 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .parallax-base {
@@ -52,7 +52,7 @@ body {
 
 .logo {
     position: absolute;
-    width: 358px; 
+    width: 358px;
     height: 358px;
     left: 70px;
     top: 70px;
@@ -79,17 +79,15 @@ body {
     transition: background-image .3s;
 }
 
-
 .character-text-div {
     position: absolute;
     white-space: nowrap;
     border: 2px solid #131e2d;
-    opacity: 0; 
+    opacity: 0;
     top: 100px;
     transition: top .3s, opacity .3s;
     pointer-events: none;
 }
-
 
 .character-text-top {
     background-color: #131e2d;
@@ -104,12 +102,11 @@ body {
     font-size: 1em;
 }
 
-.character:hover .character-text-div{
+.character:hover .character-text-div {
     opacity: 1;
     top: 0px;
     transition: top .3s, opacity .3s;
 }
-
 
 .section {
     padding: 100px 280px;
@@ -139,15 +136,13 @@ body {
     border-style: solid;
     border-radius: 4px;
     text-decoration: none;
-    
     border-color: white;
     color: white;
-    
     padding: .5em;
     padding-top: .25em;
     padding-bottom: .25em;
-
-    outline:none;
+    outline: none;
+    transition: color .3s, border-color .15s, background-color .15s;
 }
 
 .projects-button:hover {
@@ -158,6 +153,7 @@ body {
     color: #629009;
     border-color: #629009;
 }
+
 #projects-button-0:hover, .projects-button-0-active {
     color: #a9eb2c;
     border-color: #a9eb2c;
@@ -168,6 +164,7 @@ body {
     color: #900972;
     border-color: #900972;
 }
+
 #projects-button-1:hover, .projects-button-1-active {
     color: #eb2cc0;
     border-color: #eb2cc0;
@@ -178,6 +175,7 @@ body {
     color: #70410f;
     border-color: #70410f;
 }
+
 #projects-button-2:hover, .projects-button-2-active {
     color: #ea8f2d;
     border-color: #ea8f2d;
@@ -187,6 +185,10 @@ body {
 .flex-center {
     display: flex;
     align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .head-shot {
@@ -205,6 +207,10 @@ body {
     margin: .5em;
 }
 
+.medium-padding {
+    margin: 2em;
+}
+
 .pad-top-bottom {
     padding-top: .5em;
     padding-bottom: .5em;
@@ -212,4 +218,20 @@ body {
 
 .center-text {
     text-align: center;
+}
+
+.project-icon-div {
+    width: 300px;
+    height: 300px;
+    filter: grayscale(.8);
+    transition: filter .2s, border-width .2s;
+    background-attachment: local;
+    border: 0px solid white;
+}
+
+
+.project-icon-div:hover {
+    border-width: 8px;
+    filter: none;
+    cursor: pointer;
 }

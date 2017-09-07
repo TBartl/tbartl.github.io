@@ -74,7 +74,7 @@ function setZoom() {
     for (var i = 0, len = layers.length; i < len; i++) {
         var layer = layers[i];
         var depth = layer.getAttribute('data-depth');
-        var movement = (topDistance * depth / screenRatio) + 2;
+        var movement = (topDistance * depth / screenRatio)  ;
         // console.log(movement);
         // layer.style.bottom = movement + "px";
 
