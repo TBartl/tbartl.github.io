@@ -281,6 +281,15 @@ body {
     padding: .6em;
 }
 
+.project-container-real img {
+    width: 100%;
+    height: auto;
+}
+
 .italic {
     font-style: italic;
+}
+
+iframe {
+    width: 100%;
 }
