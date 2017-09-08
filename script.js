@@ -52,6 +52,33 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
 
 });
 
+angular.module("app").directive('deferImageLoad', [function () {
+   return {
+      restrict: 'A',
+      scope: {},
+      controllerAs: '$ctrl',
+      bindToController: {
+         imageSrc: '@'
+      },
+      controller: ['$element', function ($element) {
+         this.$onInit = function () {
+            if (window.addEventListener) {
+               window.addEventListener("load",
+                   this.setImageSrc.bind(this), false);
+            }
+            else if (window.attachEvent) {
+               window.attachEvent("onload",
+                   this.setImageSrc.bind(this));
+            }
+         };
+
+         this.setImageSrc = function () {
+            $element.attr('src',  this.imageSrc);
+         };
+      }]
+   };
+}]);
+
 var layers = document.getElementsByClassName("layer");
 
 var screenRatio = 1;
@@ -74,8 +101,10 @@ function setWindowSize() {
         }
     }
     screenRatio = myWidth / 1920.0;
-    document.body.style.transform = "scale(" + screenRatio + ")";
-    setZoom();
+    if (document.body) {
+        document.body.style.transform = "scale(" + screenRatio + ")";
+        setZoom();
+    }
 }
 
 function setZoom() {
@@ -105,8 +134,6 @@ window.addEventListener('resize', setWindowSize);
 window.addEventListener('scroll', setZoom);
 
 window.addEventListener("load", setLoad);
-
-
 
 function currentYPosition() {
     // Firefox, Chrome, Opera, Safari
