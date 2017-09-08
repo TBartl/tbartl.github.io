@@ -35,13 +35,20 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
     }
 
     $scope.projectFilter = 0;
-    $scope.setFilter = function(id) {
+    $scope.setFilter = function (id) {
         $scope.projectFilter = id;
     }
 
     $scope.cycleHoverChars(1000);
 
     $scope.selectedProject = -1;
+
+    $scope.scrollTo = function (id) {
+        // location.href = "#";
+        // location.href = "#project" + id; 
+        smoothScroll("project" + id);
+        $scope.selectedProject = id;
+    }
 
 });
 
@@ -76,7 +83,7 @@ function setZoom() {
     for (var i = 0, len = layers.length; i < len; i++) {
         var layer = layers[i];
         var depth = layer.getAttribute('data-depth');
-        var movement = (topDistance * depth / screenRatio)  ;
+        var movement = (topDistance * depth / screenRatio);
         // console.log(movement);
         // layer.style.bottom = movement + "px";
 
@@ -98,3 +105,51 @@ window.addEventListener('resize', setWindowSize);
 window.addEventListener('scroll', setZoom);
 
 window.addEventListener("load", setLoad);
+
+
+
+function currentYPosition() {
+    // Firefox, Chrome, Opera, Safari
+    if (self.pageYOffset) return self.pageYOffset;
+    // Internet Explorer 6 - standards mode
+    if (document.documentElement && document.documentElement.scrollTop)
+        return document.documentElement.scrollTop;
+    // Internet Explorer 6, 7 and 8
+    if (document.body.scrollTop) return document.body.scrollTop;
+    return 0;
+}
+
+function elmYPosition(eID) {
+    var elm = document.getElementById(eID);
+    var y = elm.offsetTop;
+    var node = elm;
+    while (node.offsetParent && node.offsetParent != document.body) {
+        node = node.offsetParent;
+        y += node.offsetTop;
+    } return y;
+}
+
+function smoothScroll(eID) {
+    var startY = currentYPosition();
+    var stopY = elmYPosition(eID);
+    var distance = stopY > startY ? stopY - startY : startY - stopY;
+    if (distance < 100) {
+        scrollTo(0, stopY); return;
+    }
+    var speed = Math.round(distance / 100);
+    if (speed >= 20) speed = 20;
+    var step = Math.round(distance / 25);
+    var leapY = stopY > startY ? startY + step : startY - step;
+    var timer = 0;
+    if (stopY > startY) {
+        for (var i = startY; i < stopY; i += step) {
+            setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+            leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+        } return;
+    }
+    for (var i = startY; i > stopY; i -= step) {
+        setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+        leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+    }
+    return false;
+}
