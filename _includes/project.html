@@ -14,23 +14,8 @@
 <div class="project-icon-div project-icon-div-{{include.id}}" ng-click="selectedProject = {{include.id}}" ng-class="{'project-icon-div-active' : selectedProject == {{include.id}}}">
 </div>
 <div class="project-container project-container-{{include.id}}" ng-class="{'project-container-shown' : selectedProject == {{include.id}}}">   
-    <div class="project-container-real">
-        <p>Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! </p>
-        <p>Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! </p>
-        <p>Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! </p>
-        <p>Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! </p>
-        <p>Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! </p>
-        <p>Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! </p>
-        <p>Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! </p>
-        <p>Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! </p>
-        <p>Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! </p>
-        <p>Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! </p>
-        <p>Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! </p>
-        <p>Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! </p>
-        <p>Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! </p>
-        <p>Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! </p>
-        <p>Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! Greetings Summoner! </p>
-        <p>Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! Well Met! </p>
+    <div class="project-container-real" style='background-image: url("Projects/{{include.name}}/background.png");'>
+        {% include_relative /Projects/{{include.name}}/content.html %}
     </div> 
 </div>
 
