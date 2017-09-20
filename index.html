@@ -13,6 +13,9 @@
 </head>
 
 <body ng-controller="MainController">
+	<script type="text/javascript">
+		setLoad();
+	</script>
 	<div class="parallax-base">
 		<div class="layer" data-depth="1.0">
 			<div class="layer-image" style="background-image:url('Parallax/Background-Sky.png')"></div>
@@ -46,7 +49,6 @@
 			{% include character.html id="23" pointer="0" char="Red Cursor" game="Chrono Cursor (2016)" img="ChronoCursor" offset="150" x="318" y="183" w="164" h="193" %}
 			{% include character.html id="24" pointer="0" char="Clucky" game="Laser Craft (2013)" img="LaserCraft" offset="140" x="68" y="214" w="196" h="177" %}
 		</div>
-
 	</div>
 	<div class="section about flex-center">
 		<div class="about-left light-margin">
@@ -66,7 +68,6 @@
 		</div>
 	</div>
 
-
 	<div class="section projects-section">
 		<p class="projects-header light-margin">My Work</p>
 		<p class="pad-top-bottom center-text" >Note that this portfolio is still a work in progress. For a full list of projects check out my current portfolio <a href="http://bartlett-portfolio.appspot.com/home">here</a></p>
@@ -79,8 +80,8 @@
 		<div class="flex-center justify-center">
 			{% include project.html id="0" name="TumbleweedDodgeball" %}
 			{% include project.html id="1" name="FlipSide" %}
-			 {% include project.html id="2" name="Sonder" %}  
-			<!-- {% include project.html id="3" name="WaveDasher" %}  -->
+			{% include project.html id="2" name="Sonder" %}  
+			{% include project.html id="3" name="InfiniteSpace" %}  
 		</div>
 	</div>
 
