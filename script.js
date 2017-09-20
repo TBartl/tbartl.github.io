@@ -43,6 +43,14 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
 
     $scope.selectedProject = -1;
 
+    $scope.selectProject = function (i) {
+        if ($scope.selectedProject != i) {
+            $scope.selectedProject = i;
+        } else {
+            $scope.selectedProject = -1;
+        }
+    }
+
     $scope.scrollTo = function (id) {
         // location.href = "#";
         // location.href = "#project" + id; 
@@ -53,30 +61,30 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
 });
 
 angular.module("app").directive('deferImageLoad', [function () {
-   return {
-      restrict: 'A',
-      scope: {},
-      controllerAs: '$ctrl',
-      bindToController: {
-         imageSrc: '@'
-      },
-      controller: ['$element', function ($element) {
-         this.$onInit = function () {
-            if (window.addEventListener) {
-               window.addEventListener("load",
-                   this.setImageSrc.bind(this), false);
-            }
-            else if (window.attachEvent) {
-               window.attachEvent("onload",
-                   this.setImageSrc.bind(this));
-            }
-         };
+    return {
+        restrict: 'A',
+        scope: {},
+        controllerAs: '$ctrl',
+        bindToController: {
+            imageSrc: '@'
+        },
+        controller: ['$element', function ($element) {
+            this.$onInit = function () {
+                if (window.addEventListener) {
+                    window.addEventListener("load",
+                        this.setImageSrc.bind(this), false);
+                }
+                else if (window.attachEvent) {
+                    window.attachEvent("onload",
+                        this.setImageSrc.bind(this));
+                }
+            };
 
-         this.setImageSrc = function () {
-            $element.attr('src',  this.imageSrc);
-         };
-      }]
-   };
+            this.setImageSrc = function () {
+                $element.attr('src', this.imageSrc);
+            };
+        }]
+    };
 }]);
 
 var layers = document.getElementsByClassName("layer");
@@ -84,7 +92,7 @@ var layers = document.getElementsByClassName("layer");
 var screenRatio = 1;
 
 function setWindowSize() {
-    console.log('Hey');    
+    console.log('Hey');
     var myWidth;
     if (typeof (window.innerWidth) == 'number') {
         myWidth = window.innerWidth;

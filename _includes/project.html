@@ -11,12 +11,12 @@
         order: {{counter | divided_by: 4 | plus: 1 }};
     }
 </style>
-<div id="project{{include.id}}" class="project-icon-div project-icon-div-{{include.id}}" ng-click="selectedProject = {{include.id}}" ng-class="{'project-icon-div-active' : selectedProject == {{include.id}}}">
+<div id="project{{include.id}}" class="project-icon-div project-icon-div-{{include.id}}" ng-click="selectProject({{include.id}})" ng-class="{'project-icon-div-active' : selectedProject == {{include.id}}}">
 </div>
 <div class="project-container project-container-{{include.id}}" ng-class="{'project-container-shown' : selectedProject == {{include.id}}}">   
     <div class="project-container-real" style='background-image: url("Projects/{{include.name}}/background.png");'>
         {% include_relative /Projects/{{include.name}}/content.html %}
-    </div> 
+    </div>
 </div>
 
 {% assign counter = counter | plus: 1 %}
