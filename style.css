@@ -250,8 +250,7 @@ body {
 }
 
 .project-icon-div-active {
-    border-width: 8px;
-    border-bottom-width: 0px;
+    border-width: 5px;
 }
 
 .project-container {
