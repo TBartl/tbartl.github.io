@@ -293,3 +293,12 @@ body {
 iframe {
     width: 100%;
 }
+
+.connect {
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+.connect:hover {
+    opacity: 1;
+}
