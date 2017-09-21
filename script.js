@@ -49,6 +49,7 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
         } else {
             $scope.selectedProject = -1;
         }
+        smoothScroll("project" + i);
     }
 
     $scope.scrollTo = function (id) {
@@ -92,7 +93,6 @@ var layers = document.getElementsByClassName("layer");
 var screenRatio = 1;
 
 function setWindowSize() {
-    console.log('Hey');
     var myWidth;
     if (typeof (window.innerWidth) == 'number') {
         myWidth = window.innerWidth;
@@ -151,37 +151,18 @@ function currentYPosition() {
     return 0;
 }
 
-function elmYPosition(eID) {
-    var elm = document.getElementById(eID);
-    var y = elm.offsetTop;
-    var node = elm;
-    while (node.offsetParent && node.offsetParent != document.body) {
-        node = node.offsetParent;
-        y += node.offsetTop;
-    } return y;
-}
-
 function smoothScroll(eID) {
-    var startY = currentYPosition();
-    var stopY = elmYPosition(eID);
-    var distance = stopY > startY ? stopY - startY : startY - stopY;
-    if (distance < 100) {
-        scrollTo(0, stopY); return;
+    var from = currentYPosition();
+    var toElm = document.getElementById(eID);
+
+    var time = 1100;
+    var steps = 50;
+    for (var i = 0; i < steps; i += 1) {
+        amt = i / steps;
+        setTimeout(function (amt) {
+            var to = toElm.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
+            window.scrollTo(0, from * (1-amt) + to * amt);
+        }, time * amt, Math.pow(amt, .5));
     }
-    var speed = Math.round(distance / 100);
-    if (speed >= 20) speed = 20;
-    var step = Math.round(distance / 25);
-    var leapY = stopY > startY ? startY + step : startY - step;
-    var timer = 0;
-    if (stopY > startY) {
-        for (var i = startY; i < stopY; i += step) {
-            setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
-            leapY += step; if (leapY > stopY) leapY = stopY; timer++;
-        } return;
-    }
-    for (var i = startY; i > stopY; i -= step) {
-        setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
-        leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
-    }
-    return false;
+    return;
 }
