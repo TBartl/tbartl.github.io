@@ -160,7 +160,7 @@ function smoothScroll(eID) {
     for (var i = 0; i < steps; i += 1) {
         amt = i / steps;
         setTimeout(function (amt) {
-            var to = toElm.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
+            var to = toElm.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 50;
             window.scrollTo(0, from * (1-amt) + to * amt);
         }, time * amt, Math.pow(amt, .5));
     }
