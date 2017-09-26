@@ -8,7 +8,7 @@ h1 {
     font-size: 2em;
 }
 
-p, a {
+p, a, li {
     font-size: 1.5em;
 }
 
@@ -23,7 +23,7 @@ p a {
     display: inline-block;
 }
 
-h1, p {
+h1, p, li {
     display: block;
     color: white;
 }
