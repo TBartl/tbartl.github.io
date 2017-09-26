@@ -34,9 +34,10 @@ angular.module('app').controller('MainController', function ($scope, $timeout) {
         }, delay);
     }
 
-    $scope.projectFilter = 0;
+    $scope.projectFilter = -1;
     $scope.setFilter = function (id) {
         $scope.projectFilter = id;
+        $scope.selectedProject = -1;
     }
 
     $scope.cycleHoverChars(1000);

@@ -2,6 +2,15 @@
   {% assign counter = 0 %}
 {% endunless %}
 
+{% unless gamecounter %}
+  {% assign gamecounter = 0 %}
+{% endunless %}
+
+{% unless nongamecounter %}
+  {% assign nongamecounter = 0 %}
+{% endunless %}
+
+
 <style>
     .project-icon-div-{{include.id}} {
         background-image: url("Projects/{{include.name}}/icon.png");
@@ -10,13 +19,40 @@
     .project-container-{{include.id}} {
         order: {{counter | divided_by: 4 | plus: 1 }};
     }
+
+    {% if include.isgame == "1" %}
+    .project-icon-div-override-{{include.id}} {
+        order: {{gamecounter | divided_by: 4 }};
+    }
+    .project-container-override-{{include.id}} {
+        order: {{gamecounter | divided_by: 4 | plus: 1 }};
+    }
+    
+    {% endif %}
+
+    {% if include.isgame == "0"  %}
+    .project-icon-div-override-{{include.id}} {
+        order: {{nongamecounter | divided_by: 4 }};
+    }
+    .project-container-override-{{include.id}} {
+        order: {{nongamecounter | divided_by: 4 | plus: 1 }};
+    }
+    {% endif %}
 </style>
-<div id="project{{include.id}}" class="project-icon-div project-icon-div-{{include.id}}" ng-click="selectProject({{include.id}})" ng-class="{'project-icon-div-active' : selectedProject == {{include.id}}}">
+<div id="project{{include.id}}" class="project-icon-div project-icon-div-{{include.id}}" ng-click="selectProject({{include.id}})" ng-class="{'project-icon-div-active' : selectedProject == {{include.id}}, 'project-icon-div-override-{{include.id}}' : projectFilter != -1 }" ng-hide="projectFilter == {{include.isgame}}" >
 </div>
-<div class="project-container project-container-{{include.id}}" ng-class="{'project-container-shown' : selectedProject == {{include.id}}}">   
+<div class="project-container project-container-{{include.id}}" ng-class="{'project-container-shown' : selectedProject == {{include.id}}, 'project-container-override-{{include.id}}' : projectFilter != -1 }" ng-hide="projectFilter == {{include.isgame}}">   
     <div class="project-container-real" style='background-image: url("Projects/{{include.name}}/background.png");'>
         {% include_relative /Projects/{{include.name}}/content.html %}
     </div>
 </div>
 
 {% assign counter = counter | plus: 1 %}
+
+{% if include.isgame == "1" %}
+    {% assign gamecounter = gamecounter | plus: 1 %}
+{% endif %}
+
+{% if include.isgame == "0" %}
+    {% assign nongamecounter = nongamecounter | plus: 1 %}
+{% endif %}

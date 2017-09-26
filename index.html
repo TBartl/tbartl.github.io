@@ -23,8 +23,6 @@
 		<div class="layer" data-depth="0.75">
 			<div class="layer-image" style="background-image:url('Parallax/Background-Ground.png')"></div>
 			<div class="logo"></div>
-
-			
 		</div>
 		<div class="layer" data-depth="0.5">
 			<div class="layer-image" style="background-image:url('Parallax/Layer3.png')"></div>
@@ -71,33 +69,33 @@
 	<div class="section projects-section" id ="Projects">
 		<p class="projects-header light-margin">My Work</p>
 		<div class="projects-buttons">
-			{% include filterButton.html id="0" text="All Projects" %}
-			{% include filterButton.html id="1" text="Only Games" %}
-			{% include filterButton.html id="2" text="Non Games" %}
+			{% include filterButton.html id="-1" text="All Projects" %}
+			{% include filterButton.html id="0" text="Only Games" %}
+			{% include filterButton.html id="1" text="Non Games" %}
 		</div>
 		<div class="medium-padding"></div>
 		<div class="flex-center justify-center">
-			{% include project.html id="0" name="TumbleweedDodgeball" %}
-			{% include project.html id="1" name="FlipSide" %}
-			{% include project.html id="2" name="Sonder" %}  
-			{% include project.html id="3" name="InfiniteSpace" %}
-			{% include project.html id="4" name="Predictus" %} 
-			{% include project.html id="5" name="WTLDT" %} 
-			{% include project.html id="6" name="PluggableTestFormats" %} 
-			{% include project.html id="7" name="ATFCloud" %}
-			{% include project.html id="8" name="WaveDasher" %}
-			{% include project.html id="9" name="CloudChaser" %}
-			{% include project.html id="10" name="LazerCraft" %}
-			{% include project.html id="11" name="ShapeFight" %}
-			{% include project.html id="12" name="NecroClone" %}
-			{% include project.html id="13" name="ChronoCursor" %}
-			{% include project.html id="14" name="CyberspaceDoom" %}
-			{% include project.html id="15" name="SonderAlpha" %}
-			{% include project.html id="16" name="AvalancheFiesta" %}
-			{% include project.html id="17" name="MetroidClone" %}
-			{% include project.html id="18" name="TheBloodBook" %}
-			{% include project.html id="19" name="TheHarmonizer" %}
-			{% include project.html id="20" name="SpringBreakChallenge" %}
+			{% include project.html id="0"  isgame="1" name="TumbleweedDodgeball" %}
+			{% include project.html id="1"  isgame="1" name="FlipSide" %}
+			{% include project.html id="2"  isgame="1" name="Sonder" %}  
+			{% include project.html id="3"  isgame="1" name="InfiniteSpace" %}
+			{% include project.html id="4"  isgame="0" name="Predictus" %} 
+			{% include project.html id="5"  isgame="1" name="WTLDT" %} 
+			{% include project.html id="6"  isgame="0" name="PluggableTestFormats" %} 
+			{% include project.html id="7"  isgame="0" name="ATFCloud" %}
+			{% include project.html id="8"  isgame="1" name="WaveDasher" %}
+			{% include project.html id="9"  isgame="1" name="CloudChaser" %}
+			{% include project.html id="10" isgame="1" name="LazerCraft" %}
+			{% include project.html id="11" isgame="1" name="ShapeFight" %}
+			{% include project.html id="12" isgame="1" name="NecroClone" %}
+			{% include project.html id="13" isgame="1" name="ChronoCursor" %}
+			{% include project.html id="14" isgame="1" name="CyberspaceDoom" %}
+			{% include project.html id="15" isgame="1" name="SonderAlpha" %}
+			{% include project.html id="16" isgame="1" name="AvalancheFiesta" %}
+			{% include project.html id="17" isgame="1" name="MetroidClone" %}
+			{% include project.html id="18" isgame="0" name="TheBloodBook" %}
+			{% include project.html id="19" isgame="0" name="TheHarmonizer" %}
+			{% include project.html id="20" isgame="1" name="SpringBreakChallenge" %}
 		</div>
 	</div>
 
