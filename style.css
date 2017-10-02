@@ -73,6 +73,14 @@ body {
     background-image: url("Parallax/logo.png");
 }
 
+.video {
+    position: absolute;
+    width: 720px;
+    height: 405px;
+    left: 70px;
+    top: 70px;
+}
+
 .layer-image {
     position: static;
     right: 0px;

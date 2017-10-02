@@ -1,1 +1,3 @@
 repository: TBartl.git
+
+exclude: [ignore/]
