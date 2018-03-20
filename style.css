@@ -264,7 +264,7 @@ body {
 .project-container {
     width: 1200px;
     height: 0px;
-    transition: height 1s;
+    transition: height .25s;
     overflow: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;

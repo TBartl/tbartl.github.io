@@ -156,11 +156,12 @@ function smoothScroll(eID) {
     var from = currentYPosition();
     var toElm = document.getElementById(eID);
 
-    var time = 1100;
-    var steps = 50;
+    var time = 300;
+    var steps = 15;
     for (var i = 0; i < steps; i += 1) {
-        amt = i / steps;
+        amt = (i + 1) / steps;
         setTimeout(function (amt) {
+            console.log(amt);
             var to = toElm.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 50;
             window.scrollTo(0, from * (1-amt) + to * amt);
         }, time * amt, Math.pow(amt, .5));
